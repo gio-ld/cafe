@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+     <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+      <!--Inicio navbar-->
+      <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid">
+          <!--boton hamburguesa-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--boton hamburguesa-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo.png" width="60" alt="Logo">
+              <p> Coffania</p>
+            </a>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#ubica">Ubicaciones</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#regiones">Regiones</a>
+              </li>
+              
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+  
+      </nav>
+      <!--Fin navbar-->
+    </header>
+  
+  
+    <main>
+ 
+   
+   
+    <section class="testimonios seccion-clara" id="ubica">
+        <h2 class="seccion-titulo">Ubicaciones</h2>
+        <h3 class="seccion-descripcion">Encuentranos en tu ciudad favorita </h3>
+  
+      <!-- area carrusel -->
+   <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- ubicación 1 -->
+      <div class="carousel-item active" >
+            <div class="container">
+          <img class="ubicaciones-imagen" src="./img/c1.jpg" alt="Instalciones Xela">
+          <div class="ubicaciones-info">
+          <p class="ciudad">Quetzaltenango</p>
+          <p class="zona">Centro Histórico</p>
+            </div>
+         <br>
+          <p class="ubicaciones-texto">Dirección: Calle Real del Calvario 12-28, zona 1, Quetzaltenango</p>
+          <p class="ubicaciones-texto">Teléfono: 44230-10321</p>
+          
+        </div>
+      </div>
+      <!-- Fin Ubicacion 1 -->
+
+      <!-- ubicación 2 -->
+      <div class="carousel-item active">
+        <div class="container">
+          <img class="ubicaciones-imagen" src="./img/c2.jpg" alt="Instalaciones Pana">
+          <div class="ubicaciones-info">
+          <p class="ciudad">Panajachel</p>
+          <p class="zona">Calle Santander</p>
+        </div>
+        <br>
+          <p class="ubicaciones-texto">Dirección: Calle Santander, 28-39 Zona 1, Panajachel, Sololá</p>
+          <p class="ubicaciones-texto">Teléfono: 96342-3244</p>
+          
+        </div>
+      </div>
+      <!-- Fin Ubicación 2 -->
+
+       <!-- ubicación 3 -->
+       <div class="carousel-item active">
+        <div class="container">
+          <img class="ubicaciones-imagen" src="./img/c3.jpg" alt="Instalaciones Capital">
+          <div class="ubicaciones-info">
+          <p class="ciudad">Cd. Guatemala</p>
+          <p class="zona">Condado Naranjo</p>
+        </div>
+        <br>
+          <p class="ubicaciones-texto">Dirección: Condado El Naranjo 19-50 zona 4 de Mixco, Guatemala</p>
+          <p class="ubicaciones-texto">Teléfono: 38271-5389</p>
+          
+        </div>
+      </div>
+      <!-- Fin Ubicación 3 -->
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <!-- fin area carrusel -->
+      <!--Acerca de (About)-->
+      <section class="regiones seccion-oscura" id="regiones">
+        <div class="contenedor">
+          <h2 class="seccion-titulo">DESCUBRE LA CALIDAD</h2>
+          <p class="seccion-texto">Todos nuestro granos son cosechados con los más altos estandares de calidad, tostados por manos expertas y extraídos con las mejores técnicas desarrolladas según su perfil de calidad</p>
+        </div>
+      </section>
+      <!--Fin Acerca de (About)-->
+      <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <div class="textoregion">Fraijanes</div>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> 
+                <div class="columna">
+                    <img class="granos-imagen" src="./img/f.png" alt="Instalaciones Capital">
+                  <p class="experiencia-titulo">Fraijanes</p>
+                  <p>Suelo de piedra pómez volcánica, altitudes muy altas, abundante lluvia, humedad variable y un volcán activo caracterizan la región. Pacaya, el más activo de los tres volcanes en erupción de Guatemala, abastece a la región con un ligero depósito de ceniza de vez en cuando, lo que le da al suelo un importante impulso mineral. </p>
+                
+                  <table class="table">
+                    
+                    <tbody>
+                      <tr>
+                        <th scope="row">Variedad</th>
+                        <td>Catuaí</td>
+                        <th scope="row" >Meses de cosecha</td>
+                        <td>diciembre-febrero</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Proceso</th>
+                        <td>Natural</td>
+                        <th scope="row">Altitud</th>
+                        <td>1,940 metros</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Temperatura</th>
+                        <td>57 - 88ºF</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            
+        </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <div class="textoregion">Atitlán</div>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                
+                <div class=" columna">
+                    <img class="granos-imagen" src="./img/a.png" alt="Instalaciones Capital">
+                  <p class="experiencia-titulo">Atitlán</p>
+                  <p>De las cinco regiones cafetaleras volcánicas de Guatemala, el suelo de Atitlán es el más rico en materia orgánica. El noventa por ciento del Atitlán Tradicional se cultiva en las laderas de los tres volcanes que dominan las orillas del lago de Atitlán.</p>
+                
+                  <table class="table">
+                    
+                    <tbody>
+                      <tr>
+                        <th scope="row">Variedad</th>
+                        <td>Caturra</td>
+                        <th scope="row" >Meses de cosecha</td>
+                        <td>noviembre-abril</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Proceso</th>
+                        <td>Lavado</td>
+                        <th scope="row">Altitud</th>
+                        <td>1,800 metros</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Temperatura</th>
+                        <td>57 - 88ºF</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>        
+                 </div>
+                 
+                </div>
+
+               
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <div class="textoregion">San Marcos</div>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"> 
+                <div class="columna">
+                    <img class="granos-imagen" src="./img/s.png" alt="Instalaciones Capital">
+                  <p class="experiencia-titulo">San Marcos</p>
+                  <p>La más cálida de las ocho regiones cafetaleras, San Marcos también tiene el patrón de lluvia más alto, alcanzando hasta 200 pulgadas (5,000 mm). Las lluvias estacionales llegan antes que en otras regiones, produciendo la floración más temprana. </p>
+                     <table class="table">
+                    
+                    <tbody>
+                      <tr>
+                        <th scope="row">Variedad</th>
+                        <td>Bourboun</td>
+                        <th scope="row" >Meses de cosecha</td>
+                        <td>octubre-febrero</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Proceso</th>
+                        <td>Natural</td>
+                        <th scope="row">Altitud</th>
+                        <td>2,100 metros</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Temperatura</th>
+                        <td>58 - 83ºF</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+          </div>
+        </div>
+      </section>
+      <!--Fin de Regiones-->
+  
+     <br>
+     <br>
+  
+      
+       <br>
+       <br>
+  
+     
+    </main>
+  
+    <!-- footer redes sociales -->
+    <footer class="seccion-final d-flex flex-column align-items-center justify-content-center" id="contacto">
+      <img class="footer-logo" src="./img/logo.png" alt="logo">
+      <p class="footer-texto text-center">Coffanía<br></p>
+      <div class="iconos-redes-sociales d-flex align-items-center justify-content-center">
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="bi bi-twitter"></i>
+        </a>
+        
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-autor">Creado por Módulo 4 Desarrollador Web (2022) &#169</div>
+    </footer>
+    <!--Fin footer redes sociales -->
+  
+    
+  </body>
+  
+  </html>

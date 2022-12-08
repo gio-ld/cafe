@@ -1,0 +1,267 @@
+/*Estilos generales*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Secular One', cursive, monospace;
+}
+
+.seccion-oscura {
+    background-color: #6932019d;
+    color: white;
+}
+
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.seccion-final {
+    color: rgb(255, 255, 255);
+    background-color: rgba(1, 78, 25, 0.805);
+}
+.seccion-titulo {
+    font-size: 2.5rem;
+    padding: 15px 0;
+    font-family:  'helvetica';
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.seccion-texto {
+    font-size: 1.3rem;
+}
+
+.btn-info {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+/*Fin Estilos generales*/
+
+/*Barra navegacion*/
+.navbar {
+    padding: 2rem;
+    background-color: #704004b9;
+}
+
+/*movemos elementos al lado derecho*/
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Fin Barra navegacion*/
+
+
+
+/*Regiones*/
+#regiones {
+    height: 400px;
+    padding: 10px;
+}
+
+.contenedor {
+    max-width: 100%;
+    padding: 80px;
+    text-align: center;
+}
+
+
+.columna {
+    padding: 20px;
+    /*Color con transparencia*/
+    border: 5px solid #8265004d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*Transicion*/
+    transition: all 0.5s ease-in;
+}
+
+/*Fin Regiones*/
+
+
+/*Ubicaciones*/
+.Ubicaciones {
+    padding: 40px 40px 80px 40px;
+}
+
+.ubicaciones .carousel{
+    max-width: 800px;
+}
+
+.carousel-item{
+    height: 500px;
+}
+
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ubicaciones-imagen {
+    height: 300px;
+    width: 300px;
+    margin: 10px 10px 20px 10px;
+    
+}
+
+.ubicaciones-texto {
+    max-width: 70%;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'helvetica';
+}
+
+.ubicaciones-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.ubicaciones-info p {
+    margin-bottom: 0px;
+}
+
+.ubicaciones-info .ciudad {
+    font-size: 1.4rem;
+    color:#44320a
+}
+
+.ubicaciones-info .zona {
+    font-size: 0.9rem;
+    color: #8c6000;
+}
+
+/*Fin Ubicaciones*/
+
+/*Regiones*/
+
+.textoregion{
+    text-align: center;
+    font-size: 1.2rem;
+    color:rgb(109, 86, 0)
+    
+    
+}
+
+
+.regiones .columna:hover {
+    color: rgb(66, 52, 0);
+    background-color: rgba(168, 115, 3, 0.538);
+}
+/*Efecto al pasar cursor sobre la columna*/
+.experiencia .columna:hover {
+    color: rgb(66, 52, 0);
+    background-color: rgba(168, 115, 3, 0.538);
+}
+
+
+.granos-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;   
+}
+
+/*Fin regiones*/
+
+.table{
+    text-align: center;
+    padding: 40%;
+}
+
+
+
+/*Footer*/
+.footer{
+    min-height: 500px;
+}
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+}
+
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.6rem;
+    transition: all 0.5s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: rgba(228, 145, 0, 0.345);
+    border: 2px solid rgb(167, 106, 0);
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+
+.derechos-autor{
+    font-size: 20px;
+    color: #ffffff;
+    padding: 20px;
+}
+/*Fin Footer*/
+
+/*Reglas responsive*/
+
+/*Ocultamos icono de la barra de navegacion al alcanzar 767 pixeles*/
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+/*Limitar el tamaño maximo de la imagen de tecnologias*/
+@media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+/*Tamano imagen y texto de testimonios*/
+@media screen and (max-width: 800px){
+    .ubica-imagen{
+        height: 120px;
+        width: 120px;
+    }
+
+    .ubica-texto{
+        font-size: 18px;
+    }
+}
